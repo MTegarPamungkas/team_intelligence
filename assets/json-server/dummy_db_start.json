@@ -1,0 +1,292 @@
+{
+  "users": [
+    {
+      "id": "8",
+      "name": "Tegar",
+      "email": "tegar@gmail.com",
+      "password": "123",
+      "role": "Fullstack Developer",
+      "createdAt": "2025-09-17T00:00:00Z"
+    },
+    {
+      "id": "1",
+      "name": "Budi Santoso",
+      "email": "budi@gmail.com",
+      "password": "password123",
+      "role": "Backend Developer",
+      "createdAt": "2025-08-23T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Lisa Chen",
+      "email": "lisa.chen@example.com",
+      "password": "securepass456",
+      "role": "UI/UX Designer",
+      "createdAt": "2025-08-28T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Andi Rahman",
+      "email": "andi.rahman@example.com",
+      "password": "testpass789",
+      "role": "QA Engineer",
+      "createdAt": "2025-09-02T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Andi",
+      "email": "andi@example.com",
+      "password": "andipass321",
+      "role": "Frontend Developer",
+      "createdAt": "2025-09-07T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Budi",
+      "email": "budi@example.com",
+      "password": "budipass654",
+      "role": "Backend Developer",
+      "createdAt": "2025-09-12T00:00:00Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Microsoft",
+      "description": "Microsoft project development",
+      "createdAt": "2025-08-23T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "name": "Google",
+      "description": "Google project development",
+      "createdAt": "2025-09-07T00:00:00Z",
+      "status": "active"
+    }
+  ],
+  "members": [
+    {
+      "id": "1",
+      "userId": "1",
+      "projectId": "1",
+      "role": "Backend Developer",
+      "avatar": "BS",
+      "status": "focused",
+      "currentTask": "Login API Implementation",
+      "progress": 0.73,
+      "focusDuration": 47,
+      "mood": "productive",
+      "efficiency": 0.92,
+      "joinedAt": "2025-08-23T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "projectId": "1",
+      "role": "UI/UX Designer",
+      "avatar": "LC",
+      "status": "available",
+      "currentTask": "Wireframe Review",
+      "progress": 1,
+      "focusDuration": 15,
+      "mood": "creative",
+      "efficiency": 0.88,
+      "joinedAt": "2025-08-28T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "role": "QA Engineer",
+      "projectId": "1",
+      "avatar": "AR",
+      "status": "blocked",
+      "currentTask": "Testing Module Setup",
+      "progress": 0.25,
+      "focusDuration": 120,
+      "mood": "waiting",
+      "efficiency": 0.45,
+      "joinedAt": "2025-09-02T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": "4",
+      "role": "Frontend Developer",
+      "projectId": "2",
+      "avatar": "A",
+      "status": "available",
+      "currentTask": "UI Design",
+      "progress": 0.5,
+      "focusDuration": 30,
+      "mood": "Mad",
+      "efficiency": 0.6,
+      "joinedAt": "2025-09-07T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "userId": "5",
+      "role": "Backend Developer",
+      "projectId": "2",
+      "avatar": "B",
+      "status": "focused",
+      "currentTask": "Backend Development",
+      "progress": 0.8,
+      "focusDuration": 45,
+      "mood": "Happy",
+      "efficiency": 0.8,
+      "joinedAt": "2025-09-12T00:00:00Z"
+    },
+    {
+      "id": "6",
+      "userId": "1",
+      "role": "Backend Developer",
+      "projectId": "2",
+      "avatar": "BS",
+      "status": "available",
+      "currentTask": "API Integration",
+      "progress": 0.3,
+      "focusDuration": 20,
+      "mood": "focused",
+      "efficiency": 0.85,
+      "joinedAt": "2025-09-15T00:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": "2",
+      "role": "UI/UX Designer",
+      "projectId": "2",
+      "avatar": "LC",
+      "status": "focused",
+      "currentTask": "UI/UX Design System",
+      "progress": 0.6,
+      "focusDuration": 35,
+      "mood": "creative",
+      "efficiency": 0.9,
+      "joinedAt": "2025-09-18T00:00:00Z"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "userId": "1",
+      "projectId": "1",
+      "userName": "Budi Santoso",
+      "action": "Pushed new commit to Login API",
+      "type": "commit",
+      "timestamp": "2025-09-21T22:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "projectId": "1",
+      "userName": "Lisa Chen",
+      "action": "Completed Wireframe Review task",
+      "type": "taskComplete",
+      "timestamp": "2025-09-21T23:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "projectId": "1",
+      "userName": "Andi Rahman",
+      "action": "Requested code review for Testing Module",
+      "type": "codeReview",
+      "timestamp": "2025-09-21T23:30:00Z"
+    },
+    {
+      "id": "4",
+      "userId": "2",
+      "projectId": "1",
+      "userName": "Lisa Chen",
+      "action": "Scheduled team meeting",
+      "type": "meeting",
+      "timestamp": "2025-09-21T23:45:00Z"
+    },
+    {
+      "id": "5",
+      "userId": "4",
+      "projectId": "2",
+      "userName": "Andi",
+      "action": "Started focus session for UI Design",
+      "type": "focusStart",
+      "timestamp": "2025-09-21T21:00:00Z"
+    },
+    {
+      "id": "6",
+      "userId": "5",
+      "projectId": "2",
+      "userName": "Budi",
+      "action": "Ended focus session",
+      "type": "focusEnd",
+      "timestamp": "2025-09-21T23:15:00Z"
+    },
+    {
+      "id": "7",
+      "userId": "1",
+      "projectId": "2",
+      "userName": "Budi Santoso",
+      "action": "Started API Integration task",
+      "type": "taskStart",
+      "timestamp": "2025-09-22T08:00:00Z"
+    },
+    {
+      "id": "8",
+      "userId": "2",
+      "projectId": "2",
+      "userName": "Lisa Chen",
+      "action": "Updated Design System components",
+      "type": "commit",
+      "timestamp": "2025-09-22T09:30:00Z"
+    }
+  ],
+  "insights": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "message": "Redistribute workload from Andi Rahman to Lisa Chen to balance tasks.",
+      "type": "workloadRedistribution",
+      "priority": "high",
+      "createdAt": "2025-09-21T20:00:00Z"
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "message": "Schedule code review earlier to avoid delays in Testing Module.",
+      "type": "timingOptimization",
+      "priority": "medium",
+      "createdAt": "2025-09-21T22:00:00Z"
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "message": "Potential bottleneck detected in Testing Module Setup.",
+      "type": "bottleneckDetection",
+      "priority": "critical",
+      "createdAt": "2025-09-21T23:15:00Z"
+    },
+    {
+      "id": "4",
+      "projectId": "2",
+      "message": "Encourage collaboration between Andi and Budi for UI and Backend integration.",
+      "type": "collaborationBoost",
+      "priority": "medium",
+      "createdAt": "2025-09-21T21:00:00Z"
+    },
+    {
+      "id": "5",
+      "projectId": "2",
+      "message": "Optimize Andi's focus time to improve UI Design efficiency.",
+      "type": "timingOptimization",
+      "priority": "low",
+      "createdAt": "2025-09-21T23:00:00Z"
+    },
+    {
+      "id": "6",
+      "projectId": "2",
+      "message": "Great synergy between Budi Santoso and Lisa Chen across both projects.",
+      "type": "teamSynergy",
+      "priority": "medium",
+      "createdAt": "2025-09-22T10:00:00Z"
+    }
+  ]
+}

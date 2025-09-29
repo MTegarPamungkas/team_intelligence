@@ -1,0 +1,36 @@
+{
+    "name": "json-server",
+    "version": "1.0.0",
+    "description": "JSON Server for mock API",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js",
+        "json-server": "json-server --watch dummy_db.json --port 3000 --host 0.0.0.0 --routes routes.json --middlewares middleware.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@google/genai": "^1.21.0",
+        "@google/generative-ai": "^0.24.1",
+        "bcryptjs": "^3.0.2",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.2",
+        "json-server": "^0.17.4",
+        "jsonwebtoken": "^9.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    },
+    "keywords": [
+        "json-server",
+        "jwt",
+        "authentication",
+        "api",
+        "mock"
+    ],
+    "author": "Tegar",
+    "license": "MIT",
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

@@ -1,0 +1,614 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Tegar",
+      "email": "tegar@gmail.com",
+      "password": "$2b$10$080qT6ZJtgfK5vSxIH/czejI2lqVCTe6whLX252OTWyhu83u.UI8a",
+      "avatar": "https://gravatar.com/avatar/tegar",
+      "defaultRole": "Fullstack Developer",
+      "createdAt": "2025-09-17T00:00:00Z",
+      "lastLogin": "2025-09-29T18:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Budi Santoso",
+      "email": "budi@gmail.com",
+      "password": "$2b$10$080qT6ZJtgfK5vSxIH/czejI2lqVCTe6whLX252OTWyhu83u.UI8a",
+      "avatar": "https://gravatar.com/avatar/budi",
+      "defaultRole": "Backend Developer",
+      "createdAt": "2025-08-23T00:00:00Z",
+      "lastLogin": "2025-09-29T08:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Lisa Chen",
+      "email": "lisa.chen@example.com",
+      "password": "$2b$10$080qT6ZJtgfK5vSxIH/czejI2lqVCTe6whLX252OTWyhu83u.UI8a",
+      "avatar": "https://gravatar.com/avatar/lisa",
+      "defaultRole": "UI/UX Designer",
+      "createdAt": "2025-08-28T00:00:00Z",
+      "lastLogin": "2025-09-29T09:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "New User",
+      "email": "newuser@example.com",
+      "password": "$2b$10$080qT6ZJtgfK5vSxIH/czejI2lqVCTe6whLX252OTWyhu83u.UI8a",
+      "avatar": "https://gravatar.com/avatar/newuser@example.com",
+      "defaultRole": "Member",
+      "createdAt": "2025-09-29T12:25:17.956Z",
+      "lastLogin": null
+    },
+    {
+      "id": "5",
+      "name": "new",
+      "email": "new@gmail.com",
+      "password": "$2b$10$VX5PGJAU.AwlL/AFyY6oZeSR2HsG7onHeX4fQliwP2Gmo4HDjTffG",
+      "avatar": "https://gravatar.com/avatar/new@gmail.com",
+      "defaultRole": "Member",
+      "createdAt": "2025-09-29T16:24:26.522Z",
+      "lastLogin": null
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Microsoft Platform",
+      "description": "Microsoft project development",
+      "ownerId": "1",
+      "status": "active",
+      "createdAt": "2025-08-23T00:00:00Z",
+      "updatedAt": "2025-09-29T10:00:00Z",
+      "deadline": "2025-12-31T23:59:59Z",
+      "progress": 0.65,
+      "archived": false,
+      "membersCount": 3,
+      "settings": {
+        "aiInsightsEnabled": true,
+        "aiChatEnabled": true,
+        "autoNotifications": true,
+        "activityTracking": "automatic"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Google Analytics",
+      "description": "Google project development",
+      "ownerId": "1",
+      "status": "active",
+      "createdAt": "2025-09-07T00:00:00Z",
+      "updatedAt": "2025-09-29T09:30:00Z",
+      "deadline": "2026-01-15T23:59:59Z",
+      "progress": 0.45,
+      "archived": false,
+      "membersCount": 1,
+      "settings": {
+        "aiInsightsEnabled": true,
+        "aiChatEnabled": true,
+        "autoNotifications": true,
+        "activityTracking": "automatic"
+      }
+    }
+  ],
+  "projectMembers": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "userId": "2",
+      "role": "member",
+      "projectRole": "Backend Developer",
+      "status": "active",
+      "joinedAt": "2025-08-23T00:00:00Z",
+      "permissions": {
+        "read": true,
+        "write": true,
+        "comment": true,
+        "delete": false,
+        "manage_members": false,
+        "assign_tasks": false,
+        "generate_insights": false
+      }
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "userId": "3",
+      "role": "member",
+      "projectRole": "UI/UX Designer",
+      "status": "active",
+      "joinedAt": "2025-08-28T00:00:00Z",
+      "permissions": {
+        "read": true,
+        "write": true,
+        "comment": true,
+        "delete": false,
+        "manage_members": false,
+        "assign_tasks": false,
+        "generate_insights": false
+      }
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "userId": "1",
+      "role": "leader",
+      "projectRole": "Project Lead",
+      "status": "active",
+      "joinedAt": "2025-08-23T00:00:00Z",
+      "permissions": {
+        "read": true,
+        "write": true,
+        "comment": true,
+        "delete": true,
+        "manage_members": true,
+        "assign_tasks": true,
+        "generate_insights": true
+      }
+    },
+    {
+      "id": "4",
+      "projectId": "2",
+      "userId": "1",
+      "role": "leader",
+      "projectRole": "Project Lead",
+      "status": "active",
+      "joinedAt": "2025-09-07T00:00:00Z",
+      "permissions": {
+        "read": true,
+        "write": true,
+        "comment": true,
+        "delete": true,
+        "manage_members": true,
+        "assign_tasks": true,
+        "generate_insights": true
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "title": "Login API Implementation",
+      "description": "Implement secure login API with JWT authentication",
+      "assignedTo": "2",
+      "assignedBy": "1",
+      "status": "in_progress",
+      "priority": "high",
+      "progress": 0.73,
+      "createdAt": "2025-09-15T00:00:00Z",
+      "updatedAt": "2025-09-29T08:30:00Z",
+      "startDate": "2025-09-15T00:00:00Z",
+      "dueDate": "2025-10-05T23:59:59Z",
+      "blockedReason": null,
+      "dependencies": [],
+      "estimatedHours": 40,
+      "actualHours": 29,
+      "archived": false,
+      "tags": [
+        "backend",
+        "api",
+        "security"
+      ]
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "title": "Wireframe Review",
+      "description": "Review and finalize wireframes for main dashboard",
+      "assignedTo": "3",
+      "assignedBy": "1",
+      "status": "completed",
+      "priority": "medium",
+      "progress": 1,
+      "createdAt": "2025-09-18T00:00:00Z",
+      "updatedAt": "2025-09-21T23:00:00Z",
+      "startDate": "2025-09-18T00:00:00Z",
+      "dueDate": "2025-09-22T23:59:59Z",
+      "completedAt": "2025-09-21T23:00:00Z",
+      "blockedReason": null,
+      "dependencies": [],
+      "estimatedHours": 16,
+      "actualHours": 15,
+      "archived": false,
+      "tags": [
+        "design",
+        "ui"
+      ]
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "title": "Testing Module Setup",
+      "description": "Setup automated testing framework",
+      "assignedTo": "2",
+      "assignedBy": "1",
+      "status": "blocked",
+      "priority": "high",
+      "progress": 0.25,
+      "createdAt": "2025-09-10T00:00:00Z",
+      "updatedAt": "2025-09-29T23:30:00Z",
+      "startDate": "2025-09-10T00:00:00Z",
+      "dueDate": "2025-10-04T23:59:59Z",
+      "blockedReason": "Waiting for API documentation",
+      "dependencies": [
+        "1"
+      ],
+      "estimatedHours": 24,
+      "actualHours": 6,
+      "archived": false,
+      "tags": [
+        "testing",
+        "qa"
+      ]
+    },
+    {
+      "id": "4",
+      "projectId": "1",
+      "title": "New Task",
+      "description": "Sample task description",
+      "assignedTo": "2",
+      "assignedBy": "1",
+      "status": "todo",
+      "priority": "medium",
+      "progress": 0,
+      "createdAt": "2025-09-29T12:31:58.085Z",
+      "updatedAt": "2025-09-29T12:31:58.085Z",
+      "startDate": "2025-09-30T00:00:00Z",
+      "dueDate": "2025-10-07T23:59:59Z",
+      "blockedReason": null,
+      "dependencies": [],
+      "estimatedHours": 20,
+      "actualHours": 0,
+      "archived": false,
+      "tags": [
+        "backend",
+        "feature"
+      ]
+    }
+  ],
+  "memberStatus": [
+    {
+      "id": "1",
+      "userId": "2",
+      "projectId": "1",
+      "status": "focused",
+      "currentTaskId": "1",
+      "mood": "productive",
+      "focusStartedAt": "2025-09-29T08:00:00Z",
+      "focusDuration": 47,
+      "efficiency": 0.92,
+      "lastActiveAt": "2025-09-29T08:47:00Z",
+      "updatedAt": "2025-09-29T08:47:00Z",
+      "lastUpdatedBy": "2"
+    },
+    {
+      "id": "2",
+      "userId": "3",
+      "projectId": "1",
+      "status": "available",
+      "currentTaskId": null,
+      "mood": "creative",
+      "focusStartedAt": null,
+      "focusDuration": 0,
+      "efficiency": 0.88,
+      "lastActiveAt": "2025-09-29T09:15:00Z",
+      "updatedAt": "2025-09-29T09:15:00Z",
+      "lastUpdatedBy": "3"
+    }
+  ],
+  "activities": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "userId": "2",
+      "taskId": "1",
+      "type": "commit",
+      "action": "Pushed new commit",
+      "description": "Implemented JWT token validation",
+      "visibility": "team",
+      "metadata": {
+        "commitHash": "abc123",
+        "filesChanged": 3,
+        "linesAdded": 45,
+        "linesDeleted": 12
+      },
+      "timestamp": "2025-09-29T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "projectId": "1",
+      "userId": "3",
+      "taskId": "2",
+      "type": "task_completed",
+      "action": "Completed task",
+      "description": "Wireframe Review completed ahead of schedule",
+      "visibility": "team",
+      "metadata": {},
+      "timestamp": "2025-09-21T23:00:00Z"
+    },
+    {
+      "id": "3",
+      "projectId": "1",
+      "userId": "2",
+      "taskId": "3",
+      "type": "status_update",
+      "action": "Task blocked",
+      "description": "Waiting for API documentation to proceed",
+      "visibility": "team",
+      "metadata": {
+        "oldStatus": "in_progress",
+        "newStatus": "blocked",
+        "reason": "Waiting for API documentation"
+      },
+      "timestamp": "2025-09-29T23:30:00Z"
+    },
+    {
+      "id": "4",
+      "projectId": "1",
+      "userId": "3",
+      "taskId": null,
+      "type": "meeting_scheduled",
+      "action": "Scheduled meeting",
+      "description": "Team sync meeting scheduled",
+      "visibility": "team",
+      "metadata": {
+        "meetingTitle": "Weekly Sprint Review",
+        "scheduledFor": "2025-09-30T10:00:00Z",
+        "duration": 60,
+        "attendees": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      "timestamp": "2025-09-29T23:45:00Z"
+    },
+    {
+      "id": "5",
+      "projectId": "1",
+      "userId": "2",
+      "taskId": "1",
+      "type": "focus_started",
+      "action": "Started focus session",
+      "description": "Deep work session for Login API",
+      "visibility": "team",
+      "metadata": {},
+      "timestamp": "2025-09-29T08:00:00Z"
+    },
+    {
+      "id": "6",
+      "projectId": "1",
+      "userId": "2",
+      "taskId": "1",
+      "type": "progress_update",
+      "action": "Updated progress",
+      "description": "Progress updated from 65% to 73%",
+      "visibility": "team",
+      "metadata": {
+        "oldProgress": 0.65,
+        "newProgress": 0.73,
+        "progressDelta": 0.08
+      },
+      "timestamp": "2025-09-29T08:45:00Z"
+    },
+    {
+      "id": "7",
+      "projectId": "1",
+      "userId": "1",
+      "taskId": "4",
+      "type": "task_assigned",
+      "action": "Task assigned",
+      "description": "Assigned task \"New Task\" to user 2",
+      "visibility": "team",
+      "metadata": {},
+      "timestamp": "2025-09-29T12:31:58.088Z"
+    },
+    {
+      "id": "8",
+      "projectId": "1",
+      "userId": "1",
+      "taskId": null,
+      "type": "ai_insight_generated",
+      "action": "Generated AI insights",
+      "description": "Generated 3 new AI insights",
+      "visibility": "team",
+      "metadata": {
+        "count": 3
+      },
+      "timestamp": "2025-09-29T13:14:54.194Z"
+    },
+    {
+      "id": "9",
+      "projectId": "1",
+      "userId": "1",
+      "taskId": null,
+      "type": "ai_insight_generated",
+      "action": "Generated AI insights",
+      "description": "Generated 3 new AI insights",
+      "visibility": "team",
+      "metadata": {
+        "count": 3
+      },
+      "timestamp": "2025-09-29T13:38:46.488Z"
+    },
+    {
+      "id": "10",
+      "projectId": "1",
+      "userId": "1",
+      "taskId": null,
+      "type": "ai_insight_generated",
+      "action": "Generated AI insights",
+      "description": "Generated 3 new AI insights",
+      "visibility": "team",
+      "metadata": {
+        "count": 3
+      },
+      "timestamp": "2025-09-29T13:45:02.933Z"
+    }
+  ],
+  "insights": [
+    {
+      "id": "insight-1",
+      "title": "Blocked Task Hindering Budi's Progress",
+      "type": "productivity",
+      "priority": "high",
+      "description": "Budi Santoso has a high-priority task \"Testing Module Setup\" currently blocked, impacting overall project progress. This is likely hindering Budi's ability to proceed with other assigned tasks, potentially causing delays. The current overall project progress is very slow, suggesting potential bottleneck issues",
+      "recommendation": "Tegar should investigate the reason behind the blocked task immediately and facilitate its resolution. Ensure Budi Santoso has the necessary resources or assistance to unblock the task and continue development.",
+      "affectedUserIds": [
+        1,
+        2
+      ],
+      "estimatedImpact": "high",
+      "category": "efficiency",
+      "projectId": "1",
+      "status": "active",
+      "createdAt": "2025-09-29T13:45:02.894Z",
+      "updatedAt": "2025-09-29T13:45:02.894Z",
+      "source": "ai_analysis",
+      "confidence": 0.8,
+      "metadata": {
+        "analysisDate": "2025-09-29T13:45:02.894Z",
+        "dataPoints": {
+          "tasksAnalyzed": 4,
+          "membersAnalyzed": 2,
+          "activitiesAnalyzed": 9
+        }
+      }
+    },
+    {
+      "id": "insight-2",
+      "title": "Workload Imbalance on Budi Santoso",
+      "type": "resource",
+      "priority": "medium",
+      "description": "Budi Santoso is currently assigned three tasks, including two of high priority. While his efficiency is high, overloading him may lead to burnout and impact the quality of his work and overall project timeline. There are only 4 total tasks in the project, suggesting that nearly all work is being assigned to a single individual, Budi.",
+      "recommendation": "Tegar should evaluate the possibility of reassigning \"New Task\" to another available team member or breaking down tasks into smaller, more manageable units. Consider Lisa Chen's availability and potentially involve her in backend support tasks, if possible.",
+      "affectedUserIds": [
+        1,
+        2
+      ],
+      "estimatedImpact": "medium",
+      "category": "resources",
+      "projectId": "1",
+      "status": "active",
+      "createdAt": "2025-09-29T13:45:02.894Z",
+      "updatedAt": "2025-09-29T13:45:02.894Z",
+      "source": "ai_analysis",
+      "confidence": 0.8,
+      "metadata": {
+        "analysisDate": "2025-09-29T13:45:02.894Z",
+        "dataPoints": {
+          "tasksAnalyzed": 4,
+          "membersAnalyzed": 2,
+          "activitiesAnalyzed": 9
+        }
+      }
+    },
+    {
+      "id": "insight-3",
+      "title": "Leverage Lisa Chen's Availability",
+      "type": "team",
+      "priority": "medium",
+      "description": "Lisa Chen has completed her assigned task and is currently available. Given her \"creative\" mood and good efficiency, she represents a valuable, unused resource within the team. Her experience can be leveraged to accelerate project progress.",
+      "recommendation": "Tegar should consider assigning Lisa Chen new tasks or involving her in supporting other team members, perhaps with documentation or user story review, to maximize team productivity. Perhaps Tegar can ask Lisa to review the pending testing module to help determine root cause and/or path forward.",
+      "affectedUserIds": [
+        1,
+        3
+      ],
+      "estimatedImpact": "medium",
+      "category": "collaboration",
+      "projectId": "1",
+      "status": "active",
+      "createdAt": "2025-09-29T13:45:02.894Z",
+      "updatedAt": "2025-09-29T13:45:02.894Z",
+      "source": "ai_analysis",
+      "confidence": 0.8,
+      "metadata": {
+        "analysisDate": "2025-09-29T13:45:02.894Z",
+        "dataPoints": {
+          "tasksAnalyzed": 4,
+          "membersAnalyzed": 2,
+          "activitiesAnalyzed": 9
+        }
+      }
+    }
+  ],
+  "aiChats": [
+    {
+      "id": "1",
+      "projectId": "1",
+      "userId": "1",
+      "title": "Aku mau nanya",
+      "status": "active",
+      "createdAt": "2025-09-29T15:09:21.664Z",
+      "updatedAt": "2025-09-29T15:09:21.664Z",
+      "messages": [
+        {
+          "id": "1",
+          "role": "user",
+          "content": "nam member membernya siapa aja",
+          "timestamp": "2025-09-29T15:09:21.664Z"
+        },
+        {
+          "id": "2",
+          "role": "assistant",
+          "content": "The team members for the Microsoft Platform project are: Budi Santoso (Backend Developer), Lisa Chen (UI/UX Designer), and Tegar (Project Lead).\n",
+          "contextUsed": {
+            "tasksCount": 4,
+            "activitiesCount": 5,
+            "insightsCount": 3,
+            "membersCount": 3
+          },
+          "timestamp": "2025-09-29T15:09:21.664Z"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "1",
+      "projectId": "1",
+      "type": "task_blocked",
+      "title": "Task Blocked",
+      "message": "Testing Module Setup has been blocked",
+      "priority": "high",
+      "read": false,
+      "actionUrl": "/projects/1/tasks/3",
+      "scheduledFor": null,
+      "recurrence": "none",
+      "createdAt": "2025-09-29T23:30:00Z",
+      "dismissedAt": null
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "projectId": "1",
+      "type": "ai_insight",
+      "title": "New AI Insight",
+      "message": "Bottleneck detected in Testing Module Setup",
+      "priority": "critical",
+      "read": false,
+      "actionUrl": "/projects/1/insights/1",
+      "scheduledFor": null,
+      "recurrence": "none",
+      "createdAt": "2025-09-29T23:15:00Z",
+      "dismissedAt": null
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "projectId": "1",
+      "type": "scheduled_reminder",
+      "title": "Daily Standup Reminder",
+      "message": "Time for daily standup meeting",
+      "priority": "medium",
+      "read": false,
+      "actionUrl": "/projects/1",
+      "scheduledFor": "2025-09-30T09:00:00Z",
+      "recurrence": "daily",
+      "createdAt": "2025-09-29T08:00:00Z",
+      "dismissedAt": null
+    }
+  ]
+}

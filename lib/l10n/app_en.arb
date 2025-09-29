@@ -1,0 +1,35 @@
+
+{
+  "@@locale": "en",
+  "appName": "SYNC",
+  "@appName": {
+    "description": "The name of the application"
+  },
+  "welcome": "Welcome to !",
+  "@welcome": {
+    "description": "Welcome message for the app"
+  },
+  "appTagline": "Team Intelligence Platform",
+  "@appTagline": {
+    "description": "The name of the tagline application"
+  },
+  "welcomeLogin": "Welcome Back",
+  "@welcomeLogin": {
+    "description": "Welcome message for the app"
+  },
+  "tagLineLogin": "Sign in to continue to SYNC",
+  "@tagLineLogin": {
+    "description": "Welcome message for the app"
+  },
+  "welcomeRegister": "Create Account",
+  "tagLineRegister": "Join SYNC to collaborate smarter",
+  "email": "Email",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "name": "Name",
+  "login": "Login",
+  "register": "Register",
+  "noAccount": "Don't have an account? ",
+  "haveAccount": "Already have an account? "
+
+}

@@ -1,0 +1,34 @@
+
+{
+  "@@locale": "id",
+  "appName": "",
+  "@appName": {
+    "description": "Nama aplikasi"
+  },
+  "welcome": "Selamat datang di !",
+  "@welcome": {
+    "description": "Pesan selamat datang untuk aplikasi"
+  },
+  "appTagline": "Platform Tim Intelijen",
+  "@appTagline": {
+    "description": "Nama tagline aplikasi"
+  },
+  "welcomeLogin": "Selamat Datang Kembali",
+  "@welcomeLogin": {
+    "description": "Welcome message for the app"
+  },
+  "tagLineLogin": "Masuk untuk melanjutkan ke SYNC",
+  "@tagLineLogin": {
+    "description": "Welcome message for the app"
+  },
+  "welcomeRegister": "Buat Akun",
+  "tagLineRegister": "Bergabunglah dengan SYNC untuk berkolaborasi dengan lebih cerdas.",
+  "email": "Email",
+  "password": "Kata sandi",
+  "confirmPassword": "Konfimasi kata sandi",
+  "name": "Nama",
+  "login": "Masuk",
+  "register": "Daftar",
+  "noAccount": "Belum memiliki akun? ",
+  "haveAccount": "Sudah punya akun? "
+}

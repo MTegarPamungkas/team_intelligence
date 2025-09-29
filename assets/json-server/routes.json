@@ -1,0 +1,10 @@
+{
+    "/api/projects/:id/members": "/api/projectMembers?projectId=:id",
+    "/api/projects/:id/tasks": "/api/tasks?projectId=:id",
+    "/api/projects/:id/activities": "/api/activities?projectId=:id",
+    "/api/projects/:id/insights": "/api/insights?projectId=:id",
+    "/api/projects/:id/ai-chats": "/api/aiChats?projectId=:id",
+    "/api/projects/:id/insights/generate": "/api/insights",
+    "/api/users/:id/projects": "/api/projectMembers?userId=:id",
+    "/api/users/:id/notifications": "/api/notifications?userId=:id"
+}
